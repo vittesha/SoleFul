@@ -1,0 +1,191 @@
+
+
+---------- Forwarded message ---------
+From: Sakshi Jindal <sakshijindal978@gmail.com>
+Date: Tue, Aug 23, 2022 at 4:05 PM
+Subject: CSS CODE after updating
+To: <narangmahima1310@gmail.com>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Syne Tactile', cursive; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+.inner-banner {
+    width:100%;
+    margin:0px;
+    padding: 0px 1em 0;
+    
+}
+.inner-banner img {
+    width:100%;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+.header {
+    background: radial-gradient(#ffd6d6, #fff);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+#new-row{
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+#new-row h1{
+    display: block;
+    font-size:1.975rem;
+    line-height:2.3125rem;
+    text-align:center; 
+    padding-top: 0.9375rem; 
+    padding-bottom: 0.9375rem;
+    color:black;
+}
+#new-row h4{
+    display: block;
+    font-weight: 200;
+    font-size:1.25rem;
+    line-height:1.75rem;
+    text-align:center; 
+    padding-bottom: 0.6255rem;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    color:black;
+}
+.new-container{
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact-row{
+    padding-left:5rem;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin:1.25rem 0 1.875rem;
+    column-count:3; 
+    column-gap: 10px;      
+    column-span: none;
+}
+.details{
+    margin:0.9375rem 0 0.3125rem;
+    padding-left: 0;
+    text-align:left;
+    max-width: 50%;
+    position:relative;
+    break-inside: avoid-column;  
+}
+.address{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+    
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
