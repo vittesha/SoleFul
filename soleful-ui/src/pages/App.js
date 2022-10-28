@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
-import Info from './Info';
-import Slider from './Slider';
+import Navbar from '../components/Navbar';
+import Info from '../components/Info';
+import Slider from '../components/Slider';
 
 import '../base.css';
 
@@ -13,6 +13,7 @@ function App() {
         <Slider />
       </div>
     </div>
+
   );
 }
 

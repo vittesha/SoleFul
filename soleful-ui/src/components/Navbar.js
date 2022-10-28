@@ -10,14 +10,15 @@ const Navbar = props => {
                     <Link to="/">Home</Link>
                 </li>
                 <li className='nav-link'>
-                    <Link to="/">About</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li className='nav-link'>
                     <Link to="/shop">Shop</Link>
                 </li>
                 <li className='nav-link'>
-                    <Link to="/edit">Edit</Link>
+                    <Link to="/inventory">Inventory</Link>
                 </li>
+                {/* TODO: add USER authentication */}
                 <li className='nav-link sign-in'>
                     <Link to="/">Sign In</Link>
                 </li>

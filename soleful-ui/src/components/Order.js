@@ -1,18 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Order extends React.Component {
-    static propTypes = {
-        shoes: PropTypes.shape({
-            name: PropTypes.string,
-            image: PropTypes.string,
-            brand: PropTypes.string,
-            price: PropTypes.number,
-            status: PropTypes.string,
-        }),
-        order: PropTypes.object,
-        removeFromOrder: PropTypes.func
-    };
     renderOrder = key => {
         const shoe = this.props.shoes[key];
         const count = this.props.order[key];
@@ -26,9 +14,9 @@ class Order extends React.Component {
             )
         }
         return (
-            <li key={key}>
+            <li className='order' key={key}>
                 <span className='count'> {count} </span> {shoe.name}
-                <span> {count * shoe.price} </span>
+                <span className='sum-total'> &#8377; {count * shoe.price} </span>
                 <button onClick={() => this.props.removeFromOrder(key)}>&times;</button>
             </li>
         );
@@ -44,16 +32,20 @@ class Order extends React.Component {
             }
             return prevTotal;
         }, 0);
-        return (
-            <div className='order-wrap'>
-                <h1>ORDER</h1>
-                {orderIDs.map(this.renderOrder)}
-                <div className='total'>
-                    Total:
-                    <strong>{total}</strong>
+        if (this.props.isMinimized) {
+            return (
+                <div className='order-wrap'>
+                    <h1>ORDER</h1>
+                    {orderIDs.map(this.renderOrder)}
+                    <div className='total'>
+                        Total:
+                        <strong>&#8377; {total}</strong>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        } else {
+            return (null);
+        }
     }
 }
 

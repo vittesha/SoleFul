@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Info = props => {
     return (
@@ -8,7 +9,7 @@ const Info = props => {
                 <p>Success isn't always about greatness. It's about consistency.
                     Consistent work gains success. <br />Greatness will come
                 </p >
-                <a href="" className="home-btn">Explore Now &#8594;</a>
+                <Link to="/shop" className="home-btn">Explore Now &#8594;</Link>
             </div >
         </React.Fragment >
     );

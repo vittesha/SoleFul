@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from './App';
-import Shop from './Shop';
-import Edit from './Edit';
+import App from '../pages/App';
+import Shop from '../pages/Shop';
+import About from '../pages/About';
+import Inventory from './Inventory';
 
 const Router = () => (
     <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<App />} />
+            <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/edit" element={<Edit />} />
+            <Route path="/inventory" element={<Inventory />} />
         </Routes>
     </BrowserRouter>
 );
