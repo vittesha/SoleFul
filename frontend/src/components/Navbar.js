@@ -20,7 +20,7 @@ const Navbar = props => {
                 </li>
                 {/* TODO: add USER authentication */}
                 <li className='nav-link sign-in'>
-                    <Link to="/">Sign In</Link>
+                    <Link to="/login">Sign In</Link>
                 </li>
             </ul>
         </header>

@@ -3,6 +3,7 @@ import ToggleableAddForm from './ToggleableAddForm';
 import EditShoeForm from './EditShoeForm';
 import shoes from '../sample-shoes';
 import MetaData from '../MetaData';
+import Navbar from './Navbar';
 
 export default class Inventory extends React.Component {
     state = {
@@ -30,9 +31,11 @@ export default class Inventory extends React.Component {
     };
 
     render() {
-        if (this.props.cred === true) {
+        console.log(this.props.username);
+        if (this.props.username === "Amisha" || this.props.username === "Vittesha" || this.props.username === "Mahima") {
             return (
                 <React.Fragment>
+                    <Navbar />
                     <MetaData title="SoleFul-Inventory"></MetaData>
                     <div className='Inventory'>
                         <h1 className='header'>INVENTORY</h1>
@@ -43,7 +46,10 @@ export default class Inventory extends React.Component {
             );
         } else {
             return (
-                <h1>Sorry, Access Denied!</h1>
+                <>
+                    <Navbar />
+                    <h1>Sorry, Access Denied!</h1>
+                </>
             )
         }
     }
