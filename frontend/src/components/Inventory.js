@@ -2,6 +2,7 @@ import React from 'react';
 import ToggleableAddForm from './ToggleableAddForm';
 import EditShoeForm from './EditShoeForm';
 import shoes from '../sample-shoes';
+import MetaData from '../MetaData';
 
 export default class Inventory extends React.Component {
     state = {
@@ -31,6 +32,7 @@ export default class Inventory extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <MetaData title="SoleFul-Inventory"></MetaData>
                 <div className='Inventory'>
                     <h1 className='header'>INVENTORY</h1>
                     {Object.keys(this.state.shoes).map(key => <EditShoeForm key={key} index={key} shoe={this.state.shoes[key]} shoes={this.state.shoes} updateShoe={this.updateShoe} deleteShoe={this.deleteShoe} />)}

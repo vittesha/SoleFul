@@ -1,7 +1,6 @@
 {
   "name": "ecom",
   "version": "1.0.0",
-  "description": "",
   "main": "backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,12 +13,21 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.1",
+    "mongoose": "^6.7.2",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
     "validator": "^13.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittesha/SoleFul.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vittesha/SoleFul/issues"
+  },
+  "homepage": "https://github.com/vittesha/SoleFul#readme",
+  "description": ""
 }

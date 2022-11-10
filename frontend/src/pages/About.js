@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import MetaData from '../MetaData';
 
 export default class About extends Component {
     render() {
         return (
             <>
+                <MetaData title="SoleFul-About"></MetaData>
                 <Navbar />
                 <div className='row'>
                     <div className='col-2'>

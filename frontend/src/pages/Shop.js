@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Order from '../components/Order';
 import CatFilter from '../components/CatFilter';
 import shoes from '../sample-shoes';
+import MetaData from '../MetaData';
 
 class Shop extends React.Component {
     state = {
@@ -60,6 +61,7 @@ class Shop extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <MetaData title="SoleFul-Shop"></MetaData>
                 <Navbar />
                 <h1 className='header'>SHOP</h1>
                 <form className='category-filter' onSubmit={this.createFilter}>
